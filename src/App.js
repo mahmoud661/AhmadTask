@@ -12,7 +12,7 @@ function App() {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3-8B-Instruct",
+          "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2",
           {
             method: "POST",
             headers: {
@@ -20,7 +20,7 @@ function App() {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              inputs: `hi`,
+              inputs: `fix this python code : ${code}`,
             }),
           }
         );
