@@ -20,7 +20,7 @@ function App() {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              inputs: `fix this python code : ${code}`,
+              inputs: `hi`,
             }),
           }
         );
